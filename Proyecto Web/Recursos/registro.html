@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | ROAD TO BERLIN</title>
+    <link rel="shortcut icon" href="images/Patroncuadrados.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/4358b9453c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="contenedor-global">
+
+        <div class="cabecera">
+            <a href="https://es.uefa.com/euro2024/" target="blank">
+                <div class="logo">
+                    <img src="images/LogoHorizontal.png" alt="Logo de la Euro 2024">
+                </div>
+            </a>
+            <div class="titulo">
+                <div class="texto">
+                    <h1>ROAD to BERLIN</h1>
+                    <h2>La fanpage informativa del mayor evento futbolístico del continente</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="grupos.html">Grupos</a>
+            <a href="sedes.html">Sedes</a>
+            <a class="opcion-usuario" href="login.html">Login</a>
+            <a class="opcion-usuario" href="#">Registro</a>
+        </div>
+
+        <div class="contenido">
+
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="blank" method="post">
+
+                <div class="seccion larga">
+                    <h1>Formulario de registro</h1>
+                </div>
+
+                <div class="seccion">
+                    <h2>Datos personales</h2>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <br />
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="apellidos">Apellidos</label>
+                        <br />
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <br />
+                        <input type="email" id=" email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="seccion">
+                    <h2>Datos de usuario</h2>
+                    <div class="campo">
+                        <label for="nombre-usuario">Nombre de usuario</label>
+                        <br />
+                        <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="clave">Contraseña</label>
+                        <br />
+                        <input type="password" id="clave" name="clave" required minlength="8" maxlength="16">
+                    </div>
+                    <div class="campo">
+                        <label for="confirma-clave">Confirmar contraseña</label>
+                        <br />
+                        <input type="password" id="confirma-clave" name="confirma-clave" required minlength="8" maxlength="16">
+                    </div>
+                </div>
+
+                <div class="seccion larga">
+                    <h2><label for="selecciones" class="titulo-seccion">Selecciones favoritas</label></h2>
+                    <div class="opciones">
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="alemania" />
+                            <span>Alemania</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="belgica" />
+                            <span>Bélgica</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="espana" />
+                            <span>España</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="francia" />
+                            <span>Francia</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="inglaterra" />
+                            <span>Inglaterra</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="italia" />
+                            <span>Italia</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="portugal" />
+                            <span>Portugal</span>
+                        </div>
+                        <div class="opcion">
+                            <input type="checkbox" id="selecciones" name="selecciones" value="otras" />
+                            <span>Otra(s)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccion">
+                    <button type="submit">ENVIAR</button>
+                </div>
+                <div class="seccion">
+                    <button type="reset">REINICIAR</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="footer">
+            <a href="https://twitter.com/euro2024" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/euro2024" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/EURO2024" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/antsrc" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

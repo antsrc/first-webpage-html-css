@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('reset.css');
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Cabin, sans-serif;
+    background-image: url("../images/Patroncuadradostransp.png");
+    background-size: 300px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.contenedor-global {
+    margin: 1% 2.6%;
+}
+
+.cabecera {
+    height: 100px;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+    background-color: #0459A9;
+    width: 15%;
+    min-width: 190px;
+    /* Para que no lo desborde la imagen */
+    height: 100%;
+    border-radius: 15px;
+    margin-right: 2.6%;
+    position: relative;
+    text-align: center;
+}
+
+.logo img {
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a:hover>.logo {
+    border: 4px solid #000d40;
+}
+
+a:hover>.logo img {
+    opacity: 80%;
+}
+
+.titulo {
+    display: inline-block;
+    width: 82%;
+    height: 100%;
+    background-color: #000d40;
+    border-radius: 15px;
+    position: relative;
+}
+
+.titulo .texto {
+    color: white;
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.titulo .texto h1 {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo .texto h2 {
+    font-weight: bold;
+}
+
+.navegacion {
+    display: inline-block;
+    vertical-align: top;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    width: 15%;
+    margin-right: 2.6%;
+}
+
+.navegacion a {
+    font-size: 1.3em;
+    display: block;
+    margin: 40px 10px 0 10px;
+    padding: 8px 0;
+    background-color: #0459A9;
+    color: white;
+    border-radius: 15px;
+}
+
+.navegacion a:hover {
+    background-color: #000d40;
+}
+
+.navegacion .opcion-usuario {
+    background-color: rgb(50, 179, 223);
+}
+
+.contenido {
+    display: inline-block;
+    vertical-align: top;
+    width: 82%;
+    background-color: white;
+    border-radius: 15px;
+    height: 80%;
+    margin: 40px 0 60px 0;
+    padding: 40px 0;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.footer i {
+    padding: 10px;
+    color: white;
+}
+
+.footer a:hover>i {
+    color: lightgray;
+}
+
+
+
+/* INDEX */
+
+.contenido .video-inicio {
+    width: 70%;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.contenido .cuenta-atras {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 40px 5%;
+}
+
+.contenido .cuenta-atras .visual {
+    background-image: url('../images/match.jpg');
+    background-size: cover;
+    background-position: center 0;
+    height: 200px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.contenido .cuenta-atras .visual ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    /* Para que no se descuadre en una pantalla más estrecha */
+}
+
+.contenido .cuenta-atras .visual li {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.contenido .cuenta-atras .texto {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.contenido .estadio {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 40px 5%;
+}
+
+.contenido .estadio .visual {
+    background-image: url('../images/Olympiastadion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.contenido .estadio a:hover>.visual {
+    opacity: 75%;
+}
+
+.contenido .estadio .texto {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.contenido .trofeo {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.contenido .historia {
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+}
+
+.contenido .historia p {
+    margin-top: 20px;
+}
+
+.contenido strong {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.contenido em {
+    font-style: italic;
+}
+
+
+/* NOTICIAS */
+
+.noticia {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 15px;
+    margin: 0 3%;
+    padding: 1%;
+}
+
+.noticia:not(.primera-noticia) {
+    margin-top: 40px;
+    /* Por si quisiésemos añadir más noticias debajo */
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.noticia p {
+    text-align: left;
+}
+
+.noticia .titular {
+    font-weight: bold;
+}
+
+.noticia .fecha {
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+}
+
+.noticia a {
+    color: darkred;
+    font-weight: bold;
+}
+
+.noticia a:hover {
+    background-color: darkred;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+.primera-noticia {
+    width: 86.5%;
+    text-align: left;
+}
+
+.primera-noticia video {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    border-radius: 15px;
+}
+
+.primera-noticia .info-noticia {
+    display: inline-block;
+    vertical-align: top;
+    width: 52%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.primera-noticia .descripcion {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+/* GRUPOS */
+
+.contenido .grupo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+table {
+    display: inline-block;
+}
+
+table th {
+    font-weight: bold;
+    background-color: rgb(132, 21, 21);
+    color: white;
+}
+
+table th,
+td {
+    width: 100px;
+    padding: 10px;
+}
+
+table .alfabetico {
+    text-align: left;
+    width: 150px;
+}
+
+table .contrast td {
+    background-color: whitesmoke;
+}
+
+table th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+table .ultima td:first-child {
+    border-radius: 0 0 0 15px;
+}
+
+table .ultima td:last-child {
+    border-radius: 0 0 15px 0;
+}
+
+.fi {
+    border-radius: 5px;
+}
+
+.grupo:not(.primera-linea) {
+    margin-top: 60px;
+}
+
+tr .vacante {
+    color: gray;
+}
+
+.prediccion {
+    display: inline-block;
+    width: 60%;
+    text-align: justify;
+    margin: 15px 5% 0 5%;
+    /* 5% bilateral para asegurar que se muestra debajo del grupo aunque la pantalla sea más grande*/
+    border: 1px solid rgb(132, 21, 21);
+    border-style: dashed;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.prediccion h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.prediccion strong,
+.prediccion h2 {
+    color: rgb(132, 21, 21);
+}
+
+
+
+/* SEDES */
+
+.ciudad {
+    display: inline-block;
+    width: 48%;
+}
+
+.ciudad img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.comentario {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.comentario ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.comentario strong {
+    color: #1ca75f;
+    font-weight: bold;
+}
+
+.comentario p {
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.ciudad:not(.primera-linea) {
+    margin-top: 60px;
+}
+
+
+
+/* REGISTRO Y LOGIN */
+
+form {
+    display: inline-block;
+    width: 60%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.seccion {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    text-align: center;
+    padding: 15px;
+}
+
+form h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.larga {
+    width: 100%;
+}
+
+.seccion h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+form label:not(.titulo-seccion) {
+    color: rgb(50, 50, 50);
+}
+
+.campo {
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+    margin: 2px 0;
+}
+
+.opciones {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.campo input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.opciones .opcion {
+    display: inline-block;
+    width: 18%;
+    margin: 2px 10px;
+    text-align: left;
+}
+
+.seccion button {
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.seccion button:active {
+    background-color: lightgray;
+}
+
+.aviso-registro {
+    margin-top: 10px;
+}
+
+.aviso-registro a {
+    color: black;
+    font-weight: bold;
+}
+
+.aviso-registro a:hover {
+    color: gray;
+}
+
+
+/* BIENVENIDA */
+
+.mensaje-bienvenida {
+    margin-bottom: 20px;
+}
+
+.imagen-bienvenida {
+    width: 60%;
+    border-radius: 15px;
+}
+
+a:hover>img {
+    opacity: 75%;
+}
